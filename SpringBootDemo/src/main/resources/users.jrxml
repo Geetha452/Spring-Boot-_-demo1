@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.14.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Users" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="809f95ca-653d-4860-ac3d-08386fb57e31">
-	
-	
-	<field name="ORDERID" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="ORDERID"/>
-		<property name="com.jaspersoft.studio.field.label" value="ORDERID"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	<field name="id" class="java.lang.Integer">
 	</field>
-	<field name="CUSTOMERID" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="CUSTOMERID"/>
-		<property name="com.jaspersoft.studio.field.label" value="CUSTOMERID"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	<field name="empname" class="java.lang.String">
 	</field>
-	<field name="EMPLOYEEID" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="EMPLOYEEID"/>
-		<property name="com.jaspersoft.studio.field.label" value="EMPLOYEEID"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	<field name="teamname" class="java.lang.String">
 	</field>
-	<field name="ORDERDATE" class="java.sql.Timestamp">
-		<property name="com.jaspersoft.studio.field.name" value="ORDERDATE"/>
-		<property name="com.jaspersoft.studio.field.label" value="ORDERDATE"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	<field name="salary" class="java.lang.Double">
 	</field>
 	<background>
 		<band/>
@@ -105,7 +91,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{ORDERID}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
 				<reportElement x="138" y="0" width="138" height="20" uuid="8880550d-dd38-4d0b-9ffe-b0f18c2bb6bd">
@@ -114,7 +100,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{CUSTOMERID}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{empname}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
 				<reportElement x="276" y="0" width="138" height="20" uuid="2523c87c-e58b-4c42-be43-336f8fe2ff48">
@@ -123,7 +109,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{EMPLOYEEID}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{teamname}]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight">
 				<reportElement x="414" y="0" width="138" height="20" uuid="065334a4-46ec-4e00-aed3-3cacb7e69351">
@@ -132,7 +118,7 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{ORDERDATE}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{salary}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
